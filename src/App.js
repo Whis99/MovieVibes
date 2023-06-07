@@ -11,7 +11,7 @@ const App = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    searchMovies("Batman");
+    searchMovies("Marvel");
   }, []);
 
   const searchMovies = async (title) => {
@@ -23,13 +23,13 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>~React-Tion~</h1>
+      <h1 className="bounce-animation">Movie~V!bes</h1>
 
       <div className="search">
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Search for movies"
+          placeholder="Enter a movie"
         />
         <img
           src={SearchIcon}
